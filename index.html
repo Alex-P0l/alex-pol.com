@@ -1,0 +1,515 @@
+﻿<!doctype html>
+<html lang="ru">
+  <head>
+    <title>Alex Pol Development team</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="">
+    <meta name="keywords" content="html, css, javascript, jquery">
+    <meta name="author" content="Alex Pol">
+
+    <link rel="stylesheet" href="css/vendor/icomoon/style.css">
+    <link rel="stylesheet" href="css/vendor/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/vendor/animate.min.css">
+    <link rel="stylesheet" href="css/vendor/aos.css">
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+    <nav class="unslate_co--site-mobile-menu">
+      <div class="close-wrap d-flex">
+        <a href="#" class="d-flex ml-auto js-menu-toggle">
+          <span class="close-label">Закрыть</span>
+          <div class="close-times">
+            <span class="bar1"></span>
+            <span class="bar2"></span>
+          </div>
+        </a>
+      </div>
+      <div class="site-mobile-inner"></div>
+    </nav>
+
+    <div class="unslate_co--site-wrap">
+      <div class="unslate_co--site-inner">
+        <!-- lines -->
+        <div class="lines-wrap">
+          <div class="lines-inner">
+            <div class="lines"></div>
+          </div>
+        </div>
+        <!-- END lines -->
+
+        <!-- Главное меню -->
+        <nav class="unslate_co--site-nav site-nav-target">
+          <div class="container">      
+            <div class="row align-items-center justify-content-between text-left">
+              <div class="col-md-5 text-right">
+                <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+                  <li><a href="index.html#home-section" class="nav-link">Главная</a></li>
+                  <li class="has-children">
+                  	<a href="index.html#projects-section" class="nav-link">Проекты</a>
+                  	<ul class="dropdown">
+                      <li>
+                        <a href="helpdesk.html">Telegram HelpDesk Bot</a>
+                      </li>
+                      <li>
+                        <a href="fobos.html">Fobos CMS &copy; Cloud Data Network Analyst</a>
+                      </li>
+                      <li>
+                        <a href="ad.html">Active Directory Bot</a>
+                      </li>
+                      <li>
+                        <a href="metida.html">MetIDa Data Network Bot</a>
+                      </li>
+                      <li>
+                        <a href="crm.html">Rorri Corporate CRM</a>
+                      </li>
+                  	</ul>
+                  </li>
+                  <li><a href="index.html#about-section" class="nav-link">Обо мне</a></li>  
+                </ul>
+              </div>
+              <div class="site-logo pos-absolute">
+                <a href="index.html">
+                  <img src="images/alex-pol-logo-white.png" class="lazyload unslate_co--site-logo" alt="Logo" style="width:270px;position:relative;top:27px;"/>
+                  <img src="images/alex-pol-logo-bw.png" class="lazyload unslate_co--site-logo-scroll" alt="Logo" style="width:270px;position:relative;top:50px;"/> 
+                </a>
+              </div>
+              <div class="col-md-5 text-right text-lg-left">
+                <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
+                  <li><a href="index.html#experience-section" class="nav-link">Опыт разработки</a></li>
+                  <li><a href="index.html#contact-section" class="nav-link">Контакты</a></li>
+                </ul>
+                <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
+                  <li><a href="#" class="js-menu-toggle">Меню</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- END Главное меню -->
+
+        <!-- Главная страница -->
+        <div class="cover-v1 jarallax" style="background-image: url('images/cover_bg.jpg');" id="home-section">
+          <div class="container">
+            <div class="row align-items-center">         
+              <div class="col-md-7 mx-auto text-center">
+                <h1 class="heading gsap-reveal-hero">I`m Alex <span class='hashtag'>Pol</span></h1>
+                <h2 class="subheading gsap-reveal-hero">Python Back-end <span class='hashtag'>&</span> Fullstack,<br>
+                  Django <span class='hashtag'>&</span> Aiogram Middle Developer
+                </h2>
+              </div>
+            </div>
+          </div>
+
+          <a href="#projects-section" class="mouse-wrap smoothscroll">
+            <span class="mouse">
+              <span class="scroll"></span>
+            </span>
+            <span class="mouse-label">Scroll</span>
+          </a>
+        </div>
+        <!-- END Главная страница -->
+
+        <!-- Проекты -->
+        <div class="unslate_co--section" id="projects-section">
+          <div class="container">
+            <div class="relative"><div class="loader-portfolio-wrap"><div class="loader-portfolio"></div></div></div>
+            <div id="portfolio-single-holder"></div>
+            <div class="portfolio-wrapper">
+              <div class="d-flex align-items-center mb-4 gsap-reveal gsap-reveal-filter">
+                <h2 class="mr-auto heading-h2">
+                  <span class="gsap-reveal">
+                    Проекты <span class='hashtag'>#projects</span>
+                  </span>
+                </h2>
+              </div>
+              
+              <div id="posts" class="row gutter-isotope-item">
+                <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                  <a href="helpdesk.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="1">
+                      <div class="overlay">
+                        <span class="wrap-icon icon-link2"></span>
+                        <div class="portfolio-item-content">
+                          <h3>Telegram HelpDesk Bot</h3>
+                          <p>#telegram, #python, #helpdesk</p>
+                        </div>
+                      </div>
+                      <img src="images/helpdesk-logo-prew.png" class="lazyload  img-fluid" alt="Images" />
+                    </a>
+                </div>
+                <div class="item branding packaging illustration col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
+                  <a href="fobos.html" class="portfolio-item  item-portrait isotope-item gsap-reveal-img" data-id="2">
+                      <div class="overlay">
+                        <span class="wrap-icon icon-link2"></span>
+                        <div class="portfolio-item-content">
+                          <h3>Fobos CMS &copy; Cloud Data Network Analyst</h3>
+                          <p>#network, #cms, #python, #django, #backup</p>
+                        </div>
+                      </div>
+                      <img src="images/fobos-logo-prew.png" class="lazyload  img-fluid" alt="Images" />
+                    </a>
+                </div>
+
+                <div class="item branding packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                  <a href="ad.html" class="portfolio-item isotope-item gsap-reveal-img " data-id="3">
+                    <div class="overlay">
+                      <span class="wrap-icon icon-link2"></span>
+                      <div class="portfolio-item-content">
+                        <h3>Active Directory Bot</h3>
+                        <p>#telegram, #python, #1c, #ldap</p>
+                      </div>
+                    </div>
+                    <img src="images/helpdesk-logo-prew.png" class="lazyload  img-fluid" alt="Images" />
+                  </a>
+                </div>
+
+                <div class="item web branding packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                  <a href="metida.html" class="portfolio-item item-portrait isotope-item gsap-reveal-img" data-id="4">
+                    <div class="overlay">
+                      <span class="wrap-icon icon-link2"></span>
+                      <div class="portfolio-item-content">
+                        <h3>MetIDa Data Network Bot</h3>
+                        <p>#telegram, #python, #snmp, #ldap</p>
+                      </div>
+                    </div>
+                    <img src="images/helpdesk-logo-prew.png" class="lazyload  img-fluid" alt="Images" />
+                    </a>
+                </div>
+
+                <div class="item branding packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+                  <a href="ad.html" class="portfolio-item isotope-item gsap-reveal-img " data-id="5">
+                    <div class="overlay">
+                      <span class="wrap-icon icon-link2"></span>
+                      <div class="portfolio-item-content">
+                        <h3>Rorri Corporate CRM</h3>
+                        <p>#php, #1c, #sql, #bootsrap</p>
+                      </div>
+                    </div>
+                    <img src="images/helpdesk-logo-prew.png" class="lazyload  img-fluid" alt="Images" />
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END Проекты -->
+
+        <!-- Обо мне -->
+        <div class="unslate_co--section" id="about-section">
+          <div class="container">  
+            <div class="section-heading-wrap text-center mb-5">
+              <h2 class="heading-h2 text-center divider">
+                <span class="gsap-reveal">
+                  Обо мне <span class="hashtag">#aboutme</span>
+                </span>
+              </h2>
+              <span class="gsap-reveal">
+              <img src="images/divider.png" alt="divider" width="76">
+              </span>
+            </div>
+
+            <div class="row mt-5 justify-content-between">
+              <div class="col-lg-7 mb-5 mb-lg-0" data-aos="fade-up">
+                <figure class="dotted-bg gsap-reveal-img">
+                  <img src="images/about_me.jpg" alt="About me" class="img-fluid" >
+                </figure>
+              </div>
+              <div class="col-lg-4 pr-lg-5">
+                <h3 class="mb-4 heading-h3"><span class="gsap-reveal">Код для удовольствия</span></h3>
+                <p class="lead gsap-reveal">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there <a href="#">live the blind</a> texts. </p>
+                <p class="mb-4 gsap-reveal">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                <p class="mb-4 gsap-reveal">Убеждён: пользователи хотят, чтобы всё работало...
+                  <br><span class='hashtag'>#python, #php, #ооп, #django, #aiogram, #sql, #postgres, #html, #css, #bootsrap, #git, #nginx, #fullstack, #api</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END Обо мне -->
+
+        <!-- Партнеры -->
+        <div class="unslate_co--section">
+          <div class="container">
+            <div class="section-heading-wrap text-center mb-5">
+              <h2 class="heading-h2 text-center divider">
+                <span class="gsap-reveal">
+                  Партнёры <span class="hashtag">#partners</span>
+                </span>
+              </h2>
+              <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
+            </div>
+
+            <div class="owl-carousel logo-slider">
+              <div class="logo-v1 gsap-reveal">
+                <img src="images/logo-alean.png" alt="Alean Collection" class="img-fluid">
+              </div>
+              <div class="logo-v1 gsap-reveal">
+                <img src="images/logo-kp.png" alt="Krasnaya Polyana Resort" class="img-fluid">
+              </div>
+              <div class="logo-v1 gsap-reveal">
+                <img src="images/logo-rorri.png" alt="Rorri Shop" class="img-fluid">
+              </div>
+            </div>
+          </div>     
+        </div>
+        <!-- END Партнеры -->
+
+        <!-- Опыт разработки -->
+        <div class="unslate_co--section" id="experience-section">
+          <div class="container">
+
+            <div class="section-heading-wrap text-center mb-5">
+              <h2 class="heading-h2 text-center divider">
+                <span class="gsap-reveal">
+                  Опыт разработки <span class="hashtag">#experience</span>
+                </span>
+              </h2>
+              <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
+            </div>
+
+            <div class="row gutter-v3">
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
+                  <div class="wrap-icon mb-3">
+                    <img src="images/svg/001-options.svg" alt="Image" width="45">
+                  </div>
+                  <h3>Back-End<br>Алгоритмы</h3>
+                  <p>Разработка кроссплатформенных алгоритмов взаимодействия с сервисами разных сегментов прямыми запросами или посредствам api.
+                    <br><span class="hashtag">#1с, #ldap, #snmp, #request</span>
+                  </p>
+                </div> 
+              </div>
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="feature-v1" data-aos="fade-up" data-aos-delay="100">
+                  <div class="wrap-icon mb-3">
+                    <img src="images/svg/002-chat.svg" alt="Icon" width="45">
+                  </div>
+                  <h3>User Friendly<br>Интерфейс</h3>
+                  <p>читаемый макет
+                    четкие, последовательные, простые в использовании интерфейсы 
+
+                  </p>
+                </div> 
+              </div>
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="feature-v1" data-aos="fade-up" data-aos-delay="200">
+                  <div class="wrap-icon mb-3">
+                    <img src="images/svg/003-contact-book.svg" alt="Image" class="img-fluid" width="45">
+                  </div>
+                  <h3>User <br> Experience</h3>
+                  <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
+                </div> 
+              </div>
+
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="feature-v1" data-aos="fade-up" data-aos-delay="0">
+                  <div class="wrap-icon mb-3">
+                    <img src="images/svg/004-percentage.svg" alt="Image" width="45">
+                  </div>
+                  <h3>Дизайн, архитектура<br>Баз данных</h3>
+                  <p>Написание и оптимизация sql-запросов (в т.ч. поисковых)<br>
+                    Модели данных должны быть разумно-совершенны, дополненные внешними ключами, индексами, представлениями, таблицами поиска и т.д.
+                    <br><span class="hashtag">#sql, #postgres, #select*from</span>
+                  </p>
+                </div> 
+              </div>
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="feature-v1" data-aos="fade-up" data-aos-delay="100">
+                  <div class="wrap-icon mb-3">
+                    <img src="images/svg/006-goal.svg" alt="Image" width="45">
+                  </div>
+                  <h3>Full stack <br>- это не миф</h3>
+                  <p>Опыт разработки каждого уровня проекта от дизайна архитектуры до продакшна без выгорания! 
+                    <br>Понимание того, что может сломаться.
+                    <br><span class="hashtag">#sql, #postgres, #select*from</span>
+                  </p>
+                </div> 
+              </div>
+              <div class="col-md-6 col-lg-4 mb-4">
+                <div class="feature-v1" data-aos="fade-up" data-aos-delay="200">
+                  <div class="wrap-icon mb-3">
+                    <img src="images/svg/005-line-chart.svg" alt="Image" width="45">
+                  </div>
+                  <h3>Mobile <br> Applications</h3>
+                  <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
+                </div> 
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- END Опыт разработки -->
+
+        <!-- Навыки -->
+        <div class="unslate_co--section section-counter" id="skills-section">
+          <div class="container">
+            <div class="section-heading-wrap text-center mb-5">
+              <h2 class="heading-h2 text-center divider">
+                <span class="gsap-reveal">
+                  Навыки <span class="hashtag">#skills</span>
+                </span>
+              </h2>
+              <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
+            </div>
+
+            <div class="row pt-5">
+              <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="number number-counter" data-number="87">0</span>
+                    <span class="append-text">%</span>
+                  </span>
+                  <span class="counter-label">Python</span>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="number number-counter" data-number="69">0</span>
+                    <span class="append-text">%</span>
+                  </span>
+                  <span class="counter-label">HTML/CSS</span>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="number number-counter" data-number="58">0</span>
+                    <span class="append-text">%</span>
+                  </span>
+                  <span class="counter-label">SQL</span>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="number number-counter" data-number="77">0</span>
+                    <span class="append-text">%</span>
+                  </span>
+                  <span class="counter-label">PHP</span>
+                </div>
+              </div>
+            </div>
+            <div class="row pt-5">  
+              <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="number number-counter" data-number="96">0</span>
+                    <span class="append-text">%</span>
+                  </span>
+                  <span class="counter-label">Telegram</span>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="number number-counter" data-number="84">0</span>
+                    <span class="append-text">%</span>
+                  </span>
+                  <span class="counter-label">Bootstrap</span>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="number number-counter" data-number="73">0</span>
+                    <span class="append-text">%</span>
+                  </span>
+                  <span class="counter-label">Photosop</span>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 mb-5 mb-lg-0 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                <div class="counter-v1 text-center">
+                  <span class="number-wrap">
+                    <span class="number number-counter" data-number="98">0</span>
+                    <span class="append-text">%</span>
+                  </span>
+                  <span class="counter-label">Git</span>
+                </div>
+              </div>              
+            </div>
+          </div>
+        </div>
+        <!-- END Навыки -->
+
+        <!-- Контакты -->
+        <div class="unslate_co--section" id="contact-section">
+          <div class="container">
+            <div class="section-heading-wrap text-center mb-5">
+              <h2 class="heading-h2 text-center divider">
+                <span class="gsap-reveal">
+                  На связи <span class="hashtag">#contact</span>
+                </span>
+              </h2>
+              <span class="gsap-reveal"><img src="images/divider.png" alt="divider" width="76"></span>
+            </div>
+
+            <div class="row justify-content-between">
+              <div class="col-md-3">
+                <div class="contact-info-v1">
+                  <div class="gsap-reveal d-block">
+                    <span class="d-block contact-info-label">Email</span>
+                    <a href="mailto:alex.kraspol@gmail.com" class="contact-info-val">alex.kraspol@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="contact-info-v1">
+                  <div class="gsap-reveal d-block">
+                    <span class="d-block contact-info-label">Телефон</span>
+                    <a href="tel:+79388880885" class="contact-info-val">+7 (938) 888-08-85</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="contact-info-v1">
+                  <div class="gsap-reveal d-block">
+                    <span class="d-block contact-info-label">Telegram</span>
+                    <a href="https://t.me/alex_pol" target="_blank" class="contact-info-val">@alex_pol</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END Контакты -->
+      </div> 
+
+      <footer class="unslate_co--footer unslate_co--section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-7">           
+              <div class="footer-site-logo">
+                <img src="images/alex-pol-logo-white.png" class="lazyload  img-fluid" alt="Logo" width="200"/>
+                &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+              </div>
+              <p class="site-copyright">Created with <i class="icon-heart" aria-hidden="true"></i> by 
+                <a href="https://t.me/alex_pol" target="_blank">@Alex_pol</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      
+    </div>
+
+    
+    <!-- Loader -->
+    <div id="unslate_co--overlayer"></div>
+    <div class="site-loader-wrap">
+      <div class="site-loader"></div>
+    </div>
+
+    <script src="js/scripts-dist.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
