@@ -1,12 +1,12 @@
 ﻿<!doctype html>
 <html lang="ru">
   <head>
-    <title>Alex Pol Development team</title>
+    <title>MetIDa Data Network Bot Быстрый поиск mac-адресов в локальной сети</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="description" content="">
-    <meta name="keywords" content="html, css, javascript, jquery">
+    <meta name="description" content="MetIDa Data Network Bot Быстрый поиск mac-адресов в локальной сети. Загрузка базовой информации о коммутаторах">
+    <meta name="keywords" content="python, aiogram, snmp, ldap, поиск">
     <meta name="author" content="Alex Pol">
 
     <link rel="stylesheet" href="css/vendor/icomoon/style.css">
@@ -48,7 +48,7 @@
             <div class="row align-items-center justify-content-between text-left">
               <div class="col-md-5 text-right">
                 <ul class="site-nav-ul js-clone-nav text-left d-none d-lg-inline-block">
-                  <li><a href="index.html#home-section" class="nav-link">Главная</a></li>
+                  <li><a href="index.html" class="nav-link">Главная</a></li>
                   <li class="has-children">
                   	<a href="index.html#projects-section" class="nav-link">Проекты</a>
                   	<ul class="dropdown">
@@ -97,13 +97,14 @@
           <div class="container">
             <div class="row align-items-center">
               <div class="col-md-9 mx-auto text-center" >
-                <h2 class="subheading " data-aos="fade-up" data-aos-delay="0">MetIDa Data Network Bot</h2>
-                <div class="post-meta" data-aos="fade-up" data-aos-delay="100">Страница проекта в разработке...</div>
+                <h2 class="subheading " data-aos="fade-up" data-aos-delay="0">MetIDa &copy; </h2>
+                <div class="post-meta" data-aos="fade-up" data-aos-delay="100">Data Network Bot</div>
+                <img src="images/metida-logo.png" class="lazyload img-fluid" alt="MetIDa Data Network Bot Logo" data-aos="fade-up"/>
               </div>
             </div>
           </div>
       
-          <a href="#helpdesk-intro" class="mouse-wrap smoothscroll">
+          <a href="#metida-intro" class="mouse-wrap smoothscroll">
             <span class="mouse">
               <span class="scroll"></span>
             </span>
@@ -113,7 +114,105 @@
         <!-- END Главная страница -->
 
         <!-- Функционал -->        
+        <div class="unslate_co--section" id="metida-intro">
+          <div class="container">
+            <!-- Интро -->
+            <div class="row justify-content-center">
+              <div class="col-md-9">
+                <h3 class="mb-4">
+                  Сетевой инженер у тебя в кармане
+                </h3>
+                <p class="mb-4 gsap-reveal">
+                  Работа сетевого инженера очень увлекательна и задорна! <br>
+                  Особенно если у тебя парк из 1500 единиц сетевых коммутаторов, клиенту нужно подать нужный vlan прямо сейчас, а из вводных данных, в лучшем случае, только mac-адрес...
+                </p>
+                <p class="mb-4 gsap-reveal">
+                  Можно пойти путём героя: найти mac на ядре сети, выявить необходимый коммутатор агрегации сети, подключиться к нему и понять на какой из коммутаторов доступа нужно идти дальше. Подключиться к коммутатору доступа и выяснить в каком порту нужное устройство...<br>
+                  Но есть способ, который освобождает и руки, и голову! <br>
+                  Достаточно отправить mac-адрес <span class="icon-telegram"></span> Боту — и уже через несколько секунд получить всю нужную информацию
+                </p>
+                <p class="mb-4 gsap-reveal">
+                  Не нужно помнить все закоулки топологии сети и тратить драгоценное время.<br>
+                  Быть героем или быть эффективным — выбор за тобой!
+                </p>                
+                <p class="mb-4 gsap-reveal">
+                  <span class='hashtag'>
+                    <span class="icon-info-circle"></span> Незаменим для компаний с большой сетевой инфраструктурой и интернет-провайдеров
+                  </span>
+                </p>
+              </div>
+            </div>
+            <!-- END Интро -->
+          
+            <!-- Основной функции -->
+            <div class="row mt-5 justify-content-between">
+              <div class="col-lg-7 mb-5 mb-lg-0" data-aos="fade-up">
+                <figure class="dotted-bg">
+                  <video autoplay loop muted playsinline alt="MetIDa Promo" class="img-fluid">
+                    <source src="images/metida_promo.webm" type="video/webm">
+                    <source src="images/metida_promo.mp4" type="video/mp4">
+                  </video>
+                  
+                </figure>
+              </div>
+              <div class="col-lg-4 pr-lg-5">
+                <h3 class="mb-4 heading-h3"><span class="gsap-reveal">Основные функции</span></h3>
+                <p class="mb-4 gsap-reveal">
+                  <span class="icon-adjust2"></span> Поиск коммутатора: Сбор базовой информаци об устройстве по ip/mac
+                </p>
+                <p class="mb-4 gsap-reveal">
+                  <span class="icon-adjust2"></span> Статус портов: Информация о портах коммутатора: Up/Down, Enable/Disable, имя порта, скорость, потребление PoE, UpTime и Vlan
+                </p>
+                <p class="mb-4 gsap-reveal">
+                  <span class="icon-adjust2"></span> Mac&Топология: Mac-адреса с привязкой к Vlan'ам, топология последовательно подключенных коммутаторов
+                </p>
+                <p class="mb-4 gsap-reveal">
+                  <span class="icon-adjust2"></span> Перезагрузка порта по PoE: отключение подачи питания на порт на 5 секунд
+                </p>
+                <p class="mb-4 gsap-reveal">
+                  <span class="icon-adjust2"></span> Поиск Mac-адреса: Ищет mac-адрес подключённого устройства на коммутаторах по всей сети
+                </p>
+                <p class="mb-4 gsap-reveal">
+                  <span class="icon-adjust2"></span> Поиск пользователей: Базовая информация о учётных записях LDAP
+                </p>
+              </div>
+            </div>
+            <!-- END Основной функции -->
+            <br><br><br>
 
+
+            <!-- Доп инфо -->
+              <div class="col-12 mb-5">
+                <div class="row">
+                  <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="detail-v1">
+                      <span class="detail-label">Producrion Date</span>
+                      <span class="detail-val">Ноябь 2021</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="detail-v1">
+                      <span class="detail-label">Technology</span>
+                      <span class="detail-val">
+                        <span class='hashtag'>#python #aiogram #snmp #ldap</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="detail-v1">
+                      <span class="detail-label">Contribution</span>
+                      <span class="detail-val">По вопросам тестирования и приобретения обращаться в 
+                        <a href="https://t.me/alex_pol" target="_blank" class="contact-info-val">
+                          <span class="icon-telegram"></span> Alex_pol
+                        </a>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- END Доп инфо -->
+          </div>
+        </div>
         <!-- END Функционал -->
         
       </div> 
@@ -164,6 +263,24 @@
       </footer>
       <!-- END footer -->   
     </div>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      var z = null;m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+      ym(90146258, "init", {
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true,
+          webvisor:true
+      });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/90146258" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 
     <!-- Loader -->
     <div id="unslate_co--overlayer"></div>
